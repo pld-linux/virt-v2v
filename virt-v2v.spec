@@ -1,12 +1,12 @@
 Summary:	Tool to convert guest from a foreign hypervisor to run on KVM
 Summary(pl.UTF-8):	Narzędzie do konwersji gości z obcych hipernadzorców na KVM
 Name:		virt-v2v
-Version:	2.2.0
+Version:	2.4.0
 Release:	1
 License:	GPL v2+
 Group:		Applications/System
-Source0:	https://download.libguestfs.org/virt-v2v/2.2-stable/%{name}-%{version}.tar.gz
-# Source0-md5:	01e1164e0380311199f3cdbf3aafc6ca
+Source0:	https://download.libguestfs.org/virt-v2v/2.4-stable/%{name}-%{version}.tar.gz
+# Source0-md5:	74c1c1e7cbba075de1c4443ce705479f
 URL:		https://libguestfs.org/
 BuildRequires:	bash-completion-devel >= 1:2.0
 BuildRequires:	gettext-tools
@@ -15,7 +15,7 @@ BuildRequires:	libguestfs-devel >= 1.44
 BuildRequires:	libosinfo-devel
 BuildRequires:	libvirt-devel >= 0.10.2
 BuildRequires:	libxml2-devel >= 2.0
-BuildRequires:	ocaml >= 1:4.04
+BuildRequires:	ocaml >= 1:4.07
 BuildRequires:	ocaml-gettext-devel
 BuildRequires:	ocaml-libguestfs-devel >= 1.44
 BuildRequires:	ocaml-libnbd-devel >= 1.9.3
@@ -90,6 +90,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/virt-v2v-release-notes-1.42.1*
 %{_mandir}/man1/virt-v2v-release-notes-2.0.1*
 %{_mandir}/man1/virt-v2v-release-notes-2.2.1*
+%{_mandir}/man1/virt-v2v-release-notes-2.4.1*
 %{_mandir}/man1/virt-v2v-support.1*
 %lang(ja) %{_mandir}/ja/man1/virt-v2v.1*
 %lang(ja) %{_mandir}/ja/man1/virt-v2v-copy-to-local.1*
